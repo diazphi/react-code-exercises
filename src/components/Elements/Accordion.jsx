@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const Accordion = ({title,desc}) => {
+export const Accordion = ({title,desc}) => {
     const [isActive, setIsActive] = useState(false);
     return (
         <div className="accordion-item">
@@ -11,4 +11,3 @@ const Accordion = ({title,desc}) => {
         </div>
     )
 }
-export default Accordion;

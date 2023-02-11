@@ -70,3 +70,5 @@ const AllPromises = [
 ]
 
 console.log(PromiseSum(AllPromises));
+
+console.log(process.env.PUBLIC_URL+'/images');

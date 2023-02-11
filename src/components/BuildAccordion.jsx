@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "./Elements/Accordion";
+import { Accordion } from "./Elements";
 export const BuildAccordion = () => {
     const listaccordion = [
         {
@@ -31,7 +31,7 @@ export const BuildAccordion = () => {
             <h2>Build Accordion</h2>
             <ul className="accordion">
                 {listaccordion.map((li,index) => (
-                   <Accordion title={li.title} desc={li.desc} />
+                   <Accordion key={index} title={li.title} desc={li.desc} />
                 ))}
             </ul>
         </div>
