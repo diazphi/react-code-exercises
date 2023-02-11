@@ -27,9 +27,9 @@ export const BuildAccordion = () => {
         }
     ]
     return(
-        <div>
+        <div className="block max-w-mm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <h2>Build Accordion</h2>
-            <ul className="accordion">
+            <ul className="accordion" id="accordion-collapse">
                 {listaccordion.map((li,index) => (
                    <Accordion key={index} title={li.title} desc={li.desc} />
                 ))}

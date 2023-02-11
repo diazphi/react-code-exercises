@@ -1,19 +1,23 @@
 import React from 'react';
 import './App.css';
 import './index.css';
-import { SearchList, SimpleCounter, DisplayList, BuildAccordion, Slider, Checklist } from './components';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Home, About, Contact } from './pages';
 function App() {
  
   return (
-    <div className="md:container md:mx-auto flex justify-start">
-      <h1>React Exercises</h1>
-      <SearchList />
-      <SimpleCounter />
-      <DisplayList />
-      <BuildAccordion />
-      <Slider />
-      <Checklist />
-    </div>
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/contact">Contact Us</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
