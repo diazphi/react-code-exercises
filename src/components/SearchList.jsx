@@ -10,14 +10,14 @@ export const SearchList = () => {
     'Pineapple',
     'Apple'
   ]
-
-const [listsearch, setlistsearch] = useState(list);
-const onSearchList = event => {
+  var searchresult = [];
+  const [listsearch, setlistsearch] = useState(searchresult);
+  const onSearchList = event => {
   if (event.target.value === "") {
-    setlistsearch(list);
+    setlistsearch(searchresult);
     return;
   }
-  const searchresult = list.filter((item) => 
+  searchresult = list.filter((item) => 
      item.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1
   )
   setlistsearch(searchresult);

@@ -36,6 +36,7 @@
   max-width: 700px;
   height: 500px;
   margin: 100px auto 0;
+  overflow: hidden;
 }
 .slider > .slide {
   position: absolute;
@@ -55,7 +56,7 @@
   transform: translate(-50%, -50%);
 }
 .slider > button.prev {
-  left: 0;
+  left: 28px;
 }
 .slider > .slide.active {
   opacity: 1;
