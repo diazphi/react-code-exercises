@@ -6,3 +6,4 @@ export { Slider } from './Slider';
 export { Checklist } from './Checklist';
 export { SimpleLogin } from './SimpleLogin';
 export { PrintDataAPI } from './PrintDataAPI';
+export { AddRemoveItem } from './AddRemoveItem';

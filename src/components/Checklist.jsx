@@ -62,11 +62,11 @@ export const Checklist = () => {
     }
     return (
         <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h1>Checklist</h1>
+            <h1 className="py-8">Checklist</h1>
             {itemlist.map(item => (
                 <Checkbox key={item.id} title={item.title} name={item.name} price={formatCurrency(item.price)} onChange={onChangePrice} />
             ))}
-            <h2>Total Price: {formatCurrency(Total)}</h2>
+            <h2 className="py-8">Total Price: {formatCurrency(Total)}</h2>
         </div>
     )
 }

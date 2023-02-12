@@ -40,13 +40,13 @@ export const SimpleLogin = () => {
             ) :
             (   
                 <div className="login">
-                    <h2>Login</h2>
+                    <h2 className="py-8">Login</h2>
                    <form onSubmit={onSubmitLogin} className="login-form">
-                        <label htmlFor="user">Username:</label>
+                        <label htmlFor="user" className="py-8">Username:</label>
                         <input ref={refUsername} type="text" name="user" id="user" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required onChange={event => setuserDetails({...userDetails, username: event.target.value})} />
                         <label htmlFor="password">Password:</label>
                         <input ref={refPassword} type="password" name="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="password" required onChange={event => setuserDetails({...userDetails, password: event.target.value})} />
-                        <input type="submit" value="Signin" className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" />
+                        <input type="submit" value="Signin" className="py-2.5 px-5 mr-2 mb-2 mt-8 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" />
                     </form>
                 </div>
             )}
